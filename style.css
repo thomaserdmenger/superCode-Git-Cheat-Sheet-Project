@@ -59,6 +59,7 @@ code {
   background-color: hsl(0, 0%, 100%);
   padding: 1rem;
   border-radius: 15px;
+  box-shadow: 0 0 5px 5px hsla(0, 0%, 0%, 0.024);
 }
 
 .grid-container article:nth-of-type(1) {
