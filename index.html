@@ -11,6 +11,106 @@
     <title>Git Cheat Sheet</title>
   </head>
   <body>
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <h1>Grid Cheat Sheet</h1>
+      <section class="grid-container">
+        <article>
+          <h2>Was Git ist</h2>
+          <ul>
+            <li>
+              System, das Änderungen an unseren Dateien aufzeichnet und sichert
+            </li>
+            <li>Zugriff auf alle Datei-Versionen möglich</li>
+            <li>Zurücksetzen der Dateien auf frühere Versionen möglich</li>
+            <li>
+              Arbeitsteilige Zusammenarbeit von Entwicklern an einem Projekt
+              möglich
+            </li>
+            <li>
+              Entwickler haben eigene Version der Projektdateien auf ihrem
+              Computer
+            </li>
+          </ul>
+          <p></p>
+        </article>
+        <article>
+          <h2>Basic Commands</h2>
+          <p>
+            <code>git init</code>: Erstellen eines leeren Git-Repositorys /
+            Reinitialisieren eines vorhanden Repopository
+          </p>
+          <p>
+            <code>git clone http://..</code>: Clonen eines Remote-Repository in
+            ein neues Verzeichnis
+          </p>
+          <p>
+            <code>git add .</code>: Hinzufügen bereitgestellter Dateien zur
+            Staging Area
+          </p>
+          <p>
+            <code>git commit -m “message”</code>: Übertragung der Inhalte der
+            Staging Area als neuen Commit-Snapshot in das Repository
+          </p>
+          <p><code>git push</code>: Übertrage eine Branch zu Github</p>
+          <p>
+            <code>git log</code>: Zeigt alle Commits der aktuellen Branch
+            (ausführlich)
+          </p>
+          <p>
+            <code>git log --oneline</code>: Zeigt alle Commits der aktuellen
+            Branch (komprimiert)
+          </p>
+          <p>
+            <code>git status</code>: Anzeigen geränderter Dateien im
+            Arbeitsverzeichnis, die für die nächste Übertragung bereitgestellt
+            werden
+          </p>
+        </article>
+        <article>
+          <h2>Branches</h2>
+          <p><code>git branch</code>: Vorhandene Branches anschauen</p>
+          <p><code>git branch branchname</code>: Neue Branch erstellen</p>
+          <p>
+            <code>git checkout branchname</code>: Wechsel zu einer anderen
+            Branch
+          </p>
+          <p>
+            <code>git checkout -b branchname</code>: Branch erstellen und direkt
+            dort hinwechseln
+          </p>
+          <p>
+            <code>git branch -d branchname</code>: Branch löschen (ausgehend von
+            einer anderen Branch)
+          </p>
+        </article>
+        <article>
+          <h2>Mergen von Branches</h2>
+          <ol>
+            <li>Wechsel zur Main Branch</li>
+            <li>
+              <code>git merge branchname</code>: Mergen von 2 Branches ausgehend
+              von der Main Branch
+            </li>
+            <li>Pushen nach dem Mergen</li>
+            <li>
+              <code>git branch -d branchname</code> : Nicht mehr benötigte
+              Branch löschen
+            </li>
+            <li>Pushen nach dem Löschen</li>
+          </ol>
+        </article>
+        <article>
+          <h2>Code auf spezifischen Commit zurücksetzen</h2>
+          <ol>
+            <li><code>git log --oneline</code>: Identifizieren des SHA</li>
+            <li>
+              <code>git checkout commit_SHA .</code>: Zurücksetzen auf
+              spezifischen SHA
+            </li>
+            <li>Pushen in Repo nach dem Zurücksetzen</li>
+          </ol>
+        </article>
+      </section>
+    </div>
   </body>
 </html>
