@@ -47,6 +47,8 @@ code {
   font-weight: 700;
 }
 
+/* Testen von Zurücksetzen auf spezifischen Commit */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
